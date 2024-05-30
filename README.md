@@ -1,2 +1,3 @@
-# frontend-missao-aprendizado-iniciante-conectando-com-apis-backend-Public
-Frontend - Missão de Aprendizado - Iniciante: Conectando com APIs Backend
+# Frontend - Missão de Aprendizado - Iniciante: Conectando com APIs Backend
+Projeto da Missão de Aprendizado do nível Iniciante: Conectando com APIs Backend.
+
