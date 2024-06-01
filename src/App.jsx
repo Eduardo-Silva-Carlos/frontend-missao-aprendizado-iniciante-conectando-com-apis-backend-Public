@@ -1,35 +1,25 @@
+import { useEffect } from 'react'
 import './App.css'
 import Card from './components/Card/Card'
 
 function App() {
-  const Java = {
-    name: 'Java',
-    imagem: 'https://salvatore.academy/devmon/1_java.png',
-    evoluiPara: 'kotlin'
-  }
-  const Kotlin = {
-    name: 'Kotlin',
-    imagem: 'https://salvatore.academy/devmon/2_kotlin.png',
-    evoluiPara: 'Android'
-  }
-  const Android = {
-    name: 'Android',
-    imagem: 'https://salvatore.academy/devmon/3_android.png',
-  }
-  const C = {
-    name: 'C',
-    imagem: 'https://salvatore.academy/devmon/4_c.png',
-    evoluiPara: 'C++'
-  }
-  const Cplusplus = {
-    name: 'C++',
-    imagem: 'https://salvatore.academy/devmon/5_cpp.png',
-    evoluiPara: 'C#'
-  }
-  
+
+  const devmons = []
+
+  async function fetchData() {
+
+    const apiUrl = 'https://backend-iniciante-integrar-com-frontend.onrender.com/personagem'
+
+    const response = await fetch(apiUrl)
+
+    const data = await response.json()
 
 
-  const devmons = [Java, Kotlin, Android, C, Cplusplus]
+    console.log(18, data)
+
+  }
+
+  fetchData()
 
   return (
     <>
